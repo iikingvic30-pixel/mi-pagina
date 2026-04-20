@@ -236,18 +236,22 @@ h1 {
 }
 #payBtn {
     width: 100%;
+    max-width: 240px; /* 👈 más corto */
+    margin: 25px auto 0;
+    display: block;
+
     background: linear-gradient(135deg, #c5a059, #eec373);
     color: #000;
     border: none;
-    padding: 18px;
+
+    padding: 14px 20px; /* 👈 menos alto y menos ancho */
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px; /* 👈 menos separación */
+    font-size: 13px;
+
     cursor: pointer;
     border-radius: 6px;
-    margin-top: 25px;
     transition: all 0.3s ease;
-    font-size: 14px;
-    text-transform: uppercase;
 }
 
 /* hover elegante */
