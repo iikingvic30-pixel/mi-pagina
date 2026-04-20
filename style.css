@@ -1,0 +1,281 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* VARIABLES (CLAVE PARA CONSISTENCIA) */
+:root {
+    --gold: #c5a059;
+    --gold-light: #eec373;
+    --bg-black: #000;
+    --bg-dark: #0a0a0a;
+    --text-gray: #bfbfbf;
+}
+
+/* BASE */
+body { 
+    background-color: var(--bg-black); 
+    color: white; 
+    font-family: 'Montserrat', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)), 
+                url('./fondopagina.jpeg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TEXTOS */
+.pre-title { 
+    color: var(--gold); 
+    letter-spacing: 4px; 
+    font-size: 13px; 
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+
+h1 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+}
+
+.white-text { color: #fff; }
+
+.gold-italic { 
+    color: var(--gold); 
+    font-style: italic; 
+    font-family: 'Playfair Display', serif; 
+}
+
+.tagline { 
+    font-size: 18px; 
+    max-width: 700px; 
+    color: var(--text-gray); 
+    margin-bottom: 30px; 
+    font-weight: 300; 
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-main {
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: black;
+    padding: 18px 45px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.btn-main:hover {
+    box-shadow: 0 0 30px rgba(197, 160, 89, 0.7);
+    transform: translateY(-3px);
+}
+
+/* SECCIÓN FEATURES (las 3 cajas) */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background: #111;
+    padding: 40px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid rgba(197,160,89,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.feature-box p {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+/* CHECKOUT */
+.checkout-container { 
+    background-color: var(--bg-black); 
+    padding: 120px 20px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.checkout-box {
+    background: var(--bg-dark);
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(197,160,89,0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* TITULOS */
+.panel-title { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 38px; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.panel-subtitle { 
+    color: var(--text-gray); 
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+.gold-price { 
+    color: var(--gold); 
+    font-weight: bold; 
+}
+
+/* INPUTS */
+.input-group { 
+    margin-bottom: 25px; 
+}
+
+.input-group label { 
+    display: block; 
+    font-size: 12px; 
+    letter-spacing: 2px; 
+    margin-bottom: 10px; 
+    color: #aaa;
+}
+
+.input-group input {
+    width: 100%;
+    background-color: #111;
+    border: 1px solid rgba(197,160,89,0.3);
+    padding: 15px;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 10px rgba(197,160,89,0.3);
+}
+
+/* MENSAJES DE ERROR */
+.error-text {
+    color: #c94b4b;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* BOTÓN FINAL */
+.btn-step-1 {
+    width: 100%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: #000;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+
+.btn-step-1:hover {
+    box-shadow: 0 0 25px rgba(197, 160, 89, 0.6);
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checkout-box {
+        padding: 30px;
+    }
+}
+.edit-link {
+    background: transparent;
+    border: 1px solid rgba(197,160,89,0.3);
+    color: #c5a059;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.edit-link:hover {
+    border-color: #c5a059;
+    background: rgba(197,160,89,0.1);
+}
+#payBtn {
+    width: 100%;
+    background: linear-gradient(135deg, #c5a059, #eec373);
+    color: #000;
+    border: none;
+    padding: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* hover elegante */
+#payBtn:hover {
+    box-shadow: 0 0 25px rgba(197, 160, 89, 0.6);
+    transform: translateY(-2px);
+}
+
+/* efecto al presionar */
+#payBtn:active {
+    transform: scale(0.98);
+}
+
+/* estado deshabilitado (cuando dice PROCESANDO) */
+#payBtn:disabled {
+    background: #444;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+/* SUCCESS PANEL MEJORADO */
+#step-success h2 {
+    color: #c5a059;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(197,160,89,0.4);
+}
+
+#step-success p {
+    color: #eaeaea; /* 👈 BLANCO SUAVE (ANTES NO SE VEÍA) */
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}

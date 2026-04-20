@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Acceso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <p class="pre-title">SOLO ACCESO PRIVADO</p>
+
+        <h1>
+            <span class="white-text">CAROLINA</span><br>
+            <span class="white-text">HERRERA</span>
+            <span class="gold-italic">VIP</span>
+        </h1>
+
+        <p class="tagline">
+            La exclusividad tiene un precio. Accede al círculo íntimo.
+        </p>
+
+        <a href="#checkout" class="btn-main">
+            OBTENER MEMBRESÍA →
+        </a>
+    </div>
+</header>
+
+<section class="features">
+    <div class="feature-box">
+        <div class="icon">⭐</div>
+        <h3>Contenido Exclusivo</h3>
+        <p>Inspiración diaria y secretos.</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="icon">🔒</div>
+        <h3>Comunidad Privada</h3>
+        <p>Acceso restringido.</p>
+    </div>
+
+    <div class="feature-box">
+        <div class="icon">✨</div>
+        <h3>Acceso Directo</h3>
+        <p>Contenido premium mensual.</p>
+    </div>
+</section>
+
+<section id="checkout" class="checkout-container">
+    <div class="checkout-box">
+
+        <h2 class="panel-title">Acceso VIP</h2>
+
+        <p class="panel-subtitle">
+            Pago único <span class="gold-price">$350 MXN</span>
+        </p>
+
+        <!-- 🔥 CAMBIA ESTE LINK -->
+        <a href="https://buy.stripe.com/TU_LINK_AQUI" class="btn-main">
+            🔒 PAGAR Y ACCEDER
+        </a>
+
+        <br><br>
+
+        <!-- SUCCESS -->
+        <div id="success" style="display:none; text-align:center;">
+            <h2 class="gold-italic">¡PAGO EXITOSO! ✨</h2>
+            <p>Bienvenido al VIP</p>
+
+            <a href="https://t.me/+fI2PpCrHjd82ODEx" class="btn-main">
+                ENTRAR AL TELEGRAM 🚀
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    // Mostrar éxito si vuelve desde Stripe
+    if (window.location.hash === "#success") {
+        document.getElementById("success").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
