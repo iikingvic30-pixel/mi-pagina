@@ -57,7 +57,7 @@ h1 {
 .tagline { 
     font-size: 18px; 
     max-width: 700px; 
-    color: var(--text-gray); 
+    color: var(--text-yellow); 
     margin-bottom: 30px; 
     font-weight: 300; 
 }
