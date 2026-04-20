@@ -235,19 +235,23 @@ h1 {
     background: rgba(197,160,89,0.1);
 }
 #payBtn {
-    width: 100%;
-    max-width: 240px; /* 👈 más corto */
-    margin: 25px auto 0;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;        /* 👈 clave */
+    margin: 25px auto 0;       /* 👈 centrado */
 
     background: linear-gradient(135deg, #c5a059, #eec373);
     color: #000;
     border: none;
 
-    padding: 14px 20px; /* 👈 menos alto y menos ancho */
+    padding: 14px 24px;        /* 👈 tamaño perfecto */
     font-weight: bold;
-    letter-spacing: 1px; /* 👈 menos separación */
+    letter-spacing: 1px;
     font-size: 13px;
+    text-transform: uppercase;
 
     cursor: pointer;
     border-radius: 6px;
