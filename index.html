@@ -58,26 +58,13 @@
             Suscripción mensual <span class="gold-price">$30 USD</span>
         </p>
 
-        <!-- 🔥 ESTE YA NO MANDA AL BOT -->
-        <button onclick="irAPago()" class="btn-main">
-            💳 PAGAR AHORA
-        </button>
-
     </div>
 </section>
 
 <script>
-function irAPago() {
-    // 🔥 Genera ID temporal si no viene de Telegram
-    let userId = localStorage.getItem("vip_user_id");
-
-    if (!userId) {
-        userId = Math.floor(Math.random() * 1000000000);
-        localStorage.setItem("vip_user_id", userId);
-    }
 
     // 🔥 REDIRIGE A TU BACKEND (STRIPE)
-    window.location.href = `https://TU-SERVIDOR.onrender.com/crear-pago?user_id=${userId}`;
+   window.location.href = `https://backend-pagos-jmek.onrender.com/crear-pago?user_id=${userId}`;
 }
 </script>
 
