@@ -236,6 +236,11 @@ h1 {
     font-size: 18px;
     color: #ccc;
 }
+.icon-bot {
+    width: 24px;  /* ajusta tamaño */
+    height: 24px;
+    object-fit: contain;
+}
 
 /* 📱 MOBILE FIX TOTAL */
 @media (max-width: 768px) {
