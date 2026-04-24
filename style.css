@@ -102,6 +102,12 @@ h1 {
     text-decoration: none;
     transition: 0.3s;
     box-shadow: 0 0 15px rgba(212,175,55,0.3);
+    
+    /*APARTADO DEL BOT*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
 .btn-main:hover {
@@ -237,9 +243,12 @@ h1 {
     color: #ccc;
 }
 .icon-bot {
-    width: 24px;  /* ajusta tamaño */
-    height: 24px;
+    width: 32px;   /* 🔥 más grande */
+    height: 32px;
     object-fit: contain;
+    
+    position: relative;
+    top: 1px; /* 🔧 ajuste fino para alinearlo perfecto */
 }
 
 /* 📱 MOBILE FIX TOTAL */
