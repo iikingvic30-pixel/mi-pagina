@@ -3,14 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* VARIABLES (CLAVE PARA CONSISTENCIA) */
-:root {
-    --gold: #c5a059;
-    --gold-light: #eec373;
-    --bg-black: #000;
-    --bg-dark: #0a0a0a;
-    --text-gray: #bfbfbf;
-}
 
 body {
     background: #000;
